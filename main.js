@@ -14,6 +14,7 @@ function initWidthLine() {
     img.style.width = width + "px";
     img.style.height = height + "px";
   });
+  scrollSlider();
 }
 
 window.addEventListener("resize", initWidthLine);
@@ -22,6 +23,17 @@ initWidthLine();
 
 nextBtn.addEventListener("click", function () {
   orderImg++;
+  if (orderImg >= images.length) {
+    orderImg = 0;
+  }
+  scrollSlider();
+});
+
+prevBtn.addEventListener("click", function () {
+  orderImg--;
+  if (orderImg < 0) {
+    orderImg = images.length - 1;
+  }
   scrollSlider();
 });
 
