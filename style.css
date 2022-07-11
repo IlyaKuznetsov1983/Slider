@@ -26,3 +26,31 @@ h1 {
 .slider__slide {
   display: flex;
 }
+
+.slider__controls{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+
+}
+
+.slider__prevBtn,
+.slider__nextBtn{
+    width: 5%;
+    background-color: aqua;
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+
+.slider__prevBtn:hover,
+.slider__nextBtn:hover{
+    background: bisque;
+    
+}
+
