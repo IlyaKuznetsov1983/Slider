@@ -54,3 +54,18 @@ h1 {
     
 }
 
+.slider__dots-container {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: brown;
+    opacity: 0.5;
+    margin: 0 5px 15 px;
+}

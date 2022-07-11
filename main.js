@@ -1,5 +1,5 @@
 const slider = document.querySelector(".slider");
-const sliderLine = document.querySelector(".slidr__line");
+const sliderLine = document.querySelector(".slider__line");
 const images = document.querySelectorAll(".slide img");
 const prevBtn = document.querySelector("slider__prevBtn");
 const nextBtn = document.querySelector("slider__nextBtn");
@@ -27,7 +27,7 @@ nextBtn.addEventListener("click", function () {
     orderImg = 0;
   }
   scrollSlider();
-});
+})
 
 prevBtn.addEventListener("click", function () {
   orderImg--;
@@ -35,7 +35,7 @@ prevBtn.addEventListener("click", function () {
     orderImg = images.length - 1;
   }
   scrollSlider();
-});
+})
 
 function scrollSlider() {
   sliderLine.style.transform = "translate(- " + orderImg * width + "px)";
