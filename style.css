@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.slider {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: 1px solid black;
+}
+
+.slider__line {
+  display: flex;
+  background-color: pink;
+  transition: all 1s solid;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider__slide {
+  display: flex;
+}
